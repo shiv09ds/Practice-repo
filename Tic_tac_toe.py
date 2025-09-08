@@ -1,5 +1,4 @@
 # tic_tac_toe.py
-
 def print_board(board):
     print("\n")
     for row in board:
@@ -19,7 +18,6 @@ def check_winner(board, player):
         return True
     if all([board[i][2-i] == player for i in range(3)]):
         return True
-
     return False
 
 def is_full(board):
